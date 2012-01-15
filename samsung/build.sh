@@ -63,6 +63,11 @@ case "$DEVICE" in
 		lunch=cm_galaxysbmtd-userdebug
 		brunch=cm_galaxysbmtd-userdebug
 		;;
+	galaxysl)
+		board=latona
+		lunch=cm_galaxysl-userdebug
+		brunch=cm_galaxysl-userdebug
+		;;
 	maguro)
 		board=tuna
 		lunch=cm_maguro-userdebug
