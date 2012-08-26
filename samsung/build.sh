@@ -23,11 +23,6 @@ THREADS=`cat /proc/cpuinfo | grep processor | wc -l`
 
 # Device specific settings
 case "$DEVICE" in
-	clean)
-		make clean
-		rm -rf ./out/target/product
-		exit
-		;;
 	captivatemtd)
 		board=aries
 		lunch=aocp_captivatemtd-userdebug
