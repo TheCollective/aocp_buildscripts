@@ -7,12 +7,12 @@ txtgrn='\e[0;32m' # Green
 txtylw='\e[0;33m' # Yellow
 txtblu='\e[0;34m' # Blue
 
-echo -e "${txtgrn}##############################################"
-echo -e "${txtgrn}#                                            #"
-echo -e "${txtgrn}#           COLLECTIVE BUILDSCRIPT           #"
-echo -e "${txtgrn}# Follw us on twitter @CollectiveAndroidDevs #"
-echo -e "${txtgrn}#                                            #"
-echo -e "${txtgrn}##############################################"
+echo -e "${txtylw}##############################################"
+echo -e "${txtylw}#                                            #"
+echo -e "${txtylw}#           COLLECTIVE BUILDSCRIPT           #"
+echo -e "${txtylw}# Follw us on twitter @CollectiveAndroidDevs #"
+echo -e "${txtylw}#                                            #"
+echo -e "${txtylw}##############################################"
 echo -e "\r\n ${txtrst}"
 
 # Starting Timer
@@ -54,7 +54,7 @@ case "$DEVICE" in
                 brunch=aocp_quincyatt-userdebug
                 ;;
 	*)
-		echo -e "${txtred}Usage: $0 DEVICE ADDITIONAL"
+		echo -e "${txtblu}Usage: $0 DEVICE ADDITIONAL"
 		echo -e "Example: ./build.sh captivatemtd"
 		echo -e "Example: ./build.sh captivatemtd kernel"
 		echo -e "Supported Devices: captivatemtd, quincyatt, galaxysmtd, d2att, infuse4g, maguro${txtrst}"
