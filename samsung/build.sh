@@ -7,12 +7,12 @@ txtgrn='\e[0;32m' # Green
 txtylw='\e[0;33m' # Yellow
 txtblu='\e[0;34m' # Blue
 
-echo -e "${txtgrn}##########################################"
-echo -e "${txtgrn}#                                        #"
-echo -e "${txtgrn}#    TEAMHACKSUNG ANDROID BUILDSCRIPT    #"
-echo -e "${txtgrn}# visit us @ http://www.teamhacksung.org #"
-echo -e "${txtgrn}#                                        #"
-echo -e "${txtgrn}##########################################"
+echo -e "${txtgrn}##############################################"
+echo -e "${txtgrn}#                                            #"
+echo -e "${txtgrn}#           COLLECTIVE BUILDSCRIPT           #"
+echo -e "${txtgrn}# Follw us on twitter @CollectiveAndroidDevs #"
+echo -e "${txtgrn}#                                            #"
+echo -e "${txtgrn}##############################################"
 echo -e "\r\n ${txtrst}"
 
 # Starting Timer
@@ -30,68 +30,42 @@ case "$DEVICE" in
 		;;
 	captivatemtd)
 		board=aries
-		lunch=cm_captivatemtd-userdebug
-		brunch=cm_captivatemtd-userdebug
+		lunch=aocp_captivatemtd-userdebug
+		brunch=aocp_captivatemtd-userdebug
 	;;
-	fascinatemtd)
-		board=aries
-		lunch=cm_fascinatemtd-userdebug
-		brunch=cm_fascinatemtd-userdebug
-		;;
-	galaxys2)
-		board=c1
-		lunch=cm_galaxys2-userdebug
-		brunch=cm_galaxys2-userdebug
-		;;
-	galaxys2att)
-		board=c1att
-		lunch=cm_galaxys2att-userdebug
-		brunch=cm_galaxys2att-userdebug
-		;;
-	galaxynote)
-		board=galaxynote
-		lunch=cm_galaxynote-userdebug
-		brunch=cm_galaxynote-userdebug
-		;;
 	galaxysmtd)
 		board=aries
-		lunch=cm_galaxysmtd-userdebug
-		brunch=cm_galaxysmtd-userdebug
+		lunch=aocp_galaxysmtd-userdebug
+		brunch=aocp_galaxysmtd-userdebug
 		;;
-	galaxysbmtd)
-		board=aries
-		lunch=cm_galaxysbmtd-userdebug
-		brunch=cm_galaxysbmtd-userdebug
-		;;
-	galaxysl)
-		board=latona
-		lunch=cm_galaxysl-userdebug
-		brunch=cm_galaxysl-userdebug
-		;;
+        d2att)  
+                board=msm8690
+                lunch=aocp_d2att-userdebug
+                brunch=aocp_d2att-userdebug
+                ;;
+        infuse4g)
+                board=aries
+                lunch=aocp_infuse4g-userdebug
+                brunch=aocp_infuse4g-userdebug
+                ;;
 	maguro)
 		board=tuna
-		lunch=cm_maguro-userdebug
-		brunch=cm_maguro-userdebug
+		lunch=aocp_maguro-userdebug
+		brunch=aocp_maguro-userdebug
 		;;
+        quincyatt)
+                board=msm8660
+                lunch=aocp_quincyatt-userdebug
+                brunch=aocp_quincyatt-userdebug
+                ;;
 	*)
 		echo -e "${txtred}Usage: $0 DEVICE ADDITIONAL"
 		echo -e "Example: ./build.sh galaxys2"
 		echo -e "Example: ./build.sh galaxys2 kernel"
-		echo -e "Supported Devices: captivatemtd, epic, fascinate, galaxys2, galaxys2att, galaxynote, galaxysmtd, galaxysbmtd, maguro${txtrst}"
+		echo -e "Supported Devices: captivatemtd, quincyatt, galaxysmtd, d2att, infuse4g, maguro${txtrst}"
 		exit 2
 		;;
 esac
-
-# Check for Prebuilts
-		echo -e "${txtylw}Checking for Prebuilts...${txtrst}"
-if [ ! -e vendor/cm/proprietary/RomManager.apk ] || [ ! -e vendor/cm/proprietary/Term.apk ] || [ ! -e vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm3.so ]; then
-		echo -e "${txtred}Prebuilts not found, downloading now...${txtrst}"
-		cd vendor/cm
-		./get-prebuilts
-		cd ../..
-else
-		echo -e "${txtgrn}Prebuilts found.${txtrst}"
-fi
 
 # Setting up Build Environment
 echo -e "${txtgrn}Setting up Build Environment...${txtrst}"
