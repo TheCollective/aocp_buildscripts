@@ -55,8 +55,8 @@ case "$DEVICE" in
                 ;;
 	*)
 		echo -e "${txtred}Usage: $0 DEVICE ADDITIONAL"
-		echo -e "Example: ./build.sh galaxys2"
-		echo -e "Example: ./build.sh galaxys2 kernel"
+		echo -e "Example: ./build.sh captivatemtd"
+		echo -e "Example: ./build.sh captivatemtd kernel"
 		echo -e "Supported Devices: captivatemtd, quincyatt, galaxysmtd, d2att, infuse4g, maguro${txtrst}"
 		exit 2
 		;;
