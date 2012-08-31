@@ -53,11 +53,16 @@ case "$DEVICE" in
                 lunch=aocp_quincyatt-userdebug
                 brunch=aocp_quincyatt-userdebug
                 ;;
+        toro)
+                board=tuna
+                lunch=aocp_toro-userdebug
+                brunch=aocp_toro-userdebug
+                ;;
 	*)
 		echo -e "${txtblu}Usage: $0 DEVICE ADDITIONAL"
 		echo -e "Example: ./build.sh captivatemtd"
 		echo -e "Example: ./build.sh captivatemtd kernel"
-		echo -e "Supported Devices: captivatemtd, quincyatt, galaxysmtd, d2att, infuse4g, maguro${txtrst}"
+		echo -e "Supported Devices: captivatemtd, quincyatt, galaxysmtd, d2att, infuse4g, maguro, toro${txtrst}"
 		exit 2
 		;;
 esac
