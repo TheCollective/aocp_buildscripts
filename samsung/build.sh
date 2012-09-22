@@ -10,7 +10,7 @@ txtblu='\e[0;34m' # Blue
 echo -e "${txtylw}##############################################"
 echo -e "${txtylw}#                                            #"
 echo -e "${txtylw}#           COLLECTIVE BUILDSCRIPT           #"
-echo -e "${txtylw}# Follw us on twitter @CollectiveAndroidDevs #"
+echo -e "${txtylw}#     Follw us on twitter @CollectiveDevs    #"
 echo -e "${txtylw}#                                            #"
 echo -e "${txtylw}##############################################"
 echo -e "\r\n ${txtrst}"
