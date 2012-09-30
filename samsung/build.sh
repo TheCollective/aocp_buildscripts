@@ -53,7 +53,7 @@ case "$DEVICE" in
                 lunch=aocp_quincyatt-userdebug
                 brunch=aocp_quincyatt-userdebug
                 ;;
-        sktrocket)
+        skyrocket)
                 board=msm8660
                 lunch=aocp_skyrocket-userdebug
                 brunch=aocp_skyrocket-userdebug
