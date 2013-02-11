@@ -33,6 +33,11 @@ case "$DEVICE" in
 		lunch=aocp_galaxysmtd-userdebug
 		brunch=aocp_galaxysmtd-userdebug
 		;;
+	i777)
+		board=smdk4210
+		lunch=aocp_i777-userdebug
+		brunch=aocp_i777-userdebug
+		;;
         d2att)  
                 board=msm8690
                 lunch=aocp_d2att-userdebug
