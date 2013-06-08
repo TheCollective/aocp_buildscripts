@@ -43,10 +43,10 @@ case "$DEVICE" in
                 lunch=aocp_d2att-userdebug
                 brunch=aocp_d2att-userdebug
                 ;;
-        d2tmo)  
+        d2spr)  
                 board=msm8690
-                lunch=aocp_d2tmo-userdebug
-                brunch=aocp_d2tmo-userdebug
+                lunch=aocp_d2spr-userdebug
+                brunch=aocp_d2spr-userdebug
                 ;;
         infuse4g)
                 board=aries
