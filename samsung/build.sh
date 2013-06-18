@@ -73,6 +73,11 @@ case "$DEVICE" in
                 lunch=aocp_hercules-userdebug
                 brunch=aocp_hercules-userdebug
                 ;;
+        jfltetmo)  
+                board=msm8960
+                lunch=aocp_jfltetmo-userdebug
+                brunch=aocp_jfltetmo-userdebug
+                ;;        
         toro)
                 board=tuna
                 lunch=aocp_toro-userdebug
