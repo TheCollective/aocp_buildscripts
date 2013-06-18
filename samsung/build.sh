@@ -39,12 +39,12 @@ case "$DEVICE" in
 		brunch=aocp_i777-userdebug
 		;;
         d2att)  
-                board=msm8690
+                board=msm8960
                 lunch=aocp_d2att-userdebug
                 brunch=aocp_d2att-userdebug
                 ;;
         d2spr)  
-                board=msm8690
+                board=msm8960
                 lunch=aocp_d2spr-userdebug
                 brunch=aocp_d2spr-userdebug
                 ;;
