@@ -23,41 +23,41 @@ THREADS=`cat /proc/cpuinfo | grep processor | wc -l`
 
 # Device specific settings
 case "$DEVICE" in
-	captivatemtd)
-		board=aries
-		lunch=aocp_captivatemtd-userdebug
-		brunch=aocp_captivatemtd-userdebug
-	;;
-	galaxysmtd)
-		board=aries
-		lunch=aocp_galaxysmtd-userdebug
-		brunch=aocp_galaxysmtd-userdebug
-		;;
-	i777)
-		board=smdk4210
-		lunch=aocp_i777-userdebug
-		brunch=aocp_i777-userdebug
-		;;
+		captivatemtd)
+				board=aries
+				lunch=aocp_captivatemtd-userdebug
+				brunch=aocp_captivatemtd-userdebug
+				;;
+		galaxysmtd)
+				board=aries
+				lunch=aocp_galaxysmtd-userdebug
+				brunch=aocp_galaxysmtd-userdebug
+				;;
+		i777)
+				board=smdk4210
+				lunch=aocp_i777-userdebug
+				brunch=aocp_i777-userdebug
+				;;
         d2att)  
-                board=msm8960
-                lunch=aocp_d2att-userdebug
-                brunch=aocp_d2att-userdebug
-                ;;
+				board=msm8960
+				lunch=aocp_d2att-userdebug
+				brunch=aocp_d2att-userdebug
+				;;
         d2spr)  
-                board=msm8960
-                lunch=aocp_d2spr-userdebug
-                brunch=aocp_d2spr-userdebug
-                ;;
+				board=msm8960
+				lunch=aocp_d2spr-userdebug
+				brunch=aocp_d2spr-userdebug
+				;;
         infuse4g)
-                board=aries
-                lunch=aocp_infuse4g-userdebug
-                brunch=aocp_infuse4g-userdebug
-                ;;
-	maguro)
-		board=tuna
-		lunch=aocp_maguro-userdebug
-		brunch=aocp_maguro-userdebug
-		;;
+				board=aries
+				lunch=aocp_infuse4g-userdebug
+				brunch=aocp_infuse4g-userdebug
+				;;
+		maguro)
+				board=tuna
+				lunch=aocp_maguro-userdebug
+				brunch=aocp_maguro-userdebug
+				;;
         quincyatt)
                 board=msm8660
                 lunch=aocp_quincyatt-userdebug
