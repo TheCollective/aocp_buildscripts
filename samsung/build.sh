@@ -103,7 +103,7 @@ case "$DEVICE" in
 		echo -e "${txtblu}Usage: $0 DEVICE ADDITIONAL"
 		echo -e "Example: ./build.sh captivatemtd"
 		echo -e "Example: ./build.sh captivatemtd kernel"
-		echo -e "Supported Devices: p5110, skyrocket, captivatemtd, quincyatt, galaxysmtd, d2att, d2tmo, infuse4g, maguro, toro${txtrst}"
+		echo -e "Supported Devices: captivatemtd,  galaxysmtd,  i777, d2att, d2spr, infuse4g, maguro, quincyatt, skyrocket, hercules, jfltetmo, jflteatt, t0lteatt, toro, p5110${txtrst}"
 		exit 2
 		;;
 esac
