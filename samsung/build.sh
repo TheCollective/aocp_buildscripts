@@ -38,17 +38,17 @@ case "$DEVICE" in
 				lunch=aocp_i777-userdebug
 				brunch=aocp_i777-userdebug
 				;;
-        d2att)  
+        	d2att)  
 				board=msm8960
 				lunch=aocp_d2att-userdebug
 				brunch=aocp_d2att-userdebug
 				;;
-        d2spr)  
+		d2spr)  
 				board=msm8960
 				lunch=aocp_d2spr-userdebug
 				brunch=aocp_d2spr-userdebug
 				;;
-        infuse4g)
+        	infuse4g)
 				board=aries
 				lunch=aocp_infuse4g-userdebug
 				brunch=aocp_infuse4g-userdebug
@@ -58,46 +58,52 @@ case "$DEVICE" in
 				lunch=aocp_maguro-userdebug
 				brunch=aocp_maguro-userdebug
 				;;
-        quincyatt)
-                board=msm8660
-                lunch=aocp_quincyatt-userdebug
-                brunch=aocp_quincyatt-userdebug
-                ;;
-        skyrocket)
-                board=msm8660
-                lunch=aocp_skyrocket-userdebug
-                brunch=aocp_skyrocket-userdebug
-                ;;
-        hercules)
-                board=msm8660
-                lunch=aocp_hercules-userdebug
-                brunch=aocp_hercules-userdebug
-                ;;
-        jfltetmo)  
-                board=msm8960
-                lunch=aocp_jfltetmo-userdebug
-                brunch=aocp_jfltetmo-userdebug
-                ;;   
-        jflteatt)  
-                board=msm8960
-                lunch=aocp_jflteatt-userdebug
-                brunch=aocp_jflteatt-userdebug
-                ;;
+        	quincyatt)
+                		board=msm8660
+                		lunch=aocp_quincyatt-userdebug
+                		brunch=aocp_quincyatt-userdebug
+                		;;
+        	skyrocket)
+                		board=msm8660
+                		lunch=aocp_skyrocket-userdebug
+                		brunch=aocp_skyrocket-userdebug
+                		;;
+        	hercules)
+                		board=msm8660
+                		lunch=aocp_hercules-userdebug
+                		brunch=aocp_hercules-userdebug
+                		;;
+        	jfltetmo)  
+                		board=msm8960
+                		lunch=aocp_jfltetmo-userdebug
+                		brunch=aocp_jfltetmo-userdebug
+                		;;   
+        	jflteatt)  
+                		board=msm8960
+                		lunch=aocp_jflteatt-userdebug
+                		brunch=aocp_jflteatt-userdebug
+                		;;
 		t0lteatt)
 				board=smdk4412
 				lunch=aocp_t0lteatt-userdebug
 				brunch=aocp_t0lteatt-userdebug
 				;;			   				     
-        toro)
-                board=tuna
-                lunch=aocp_toro-userdebug
-                brunch=aocp_toro-userdebug
-                ;;
+        	toro)
+                		board=tuna
+                		lunch=aocp_toro-userdebug
+                		brunch=aocp_toro-userdebug
+                		;;
+
+		p5110)
+				board=espresso10
+			        lunch=aocp_p5110-userdebug
+			        brunch=aocp_p5110-userdebug
+			        ;;
 	*)
 		echo -e "${txtblu}Usage: $0 DEVICE ADDITIONAL"
 		echo -e "Example: ./build.sh captivatemtd"
 		echo -e "Example: ./build.sh captivatemtd kernel"
-		echo -e "Supported Devices: skyrocket, captivatemtd, quincyatt, galaxysmtd, d2att, d2tmo, infuse4g, maguro, toro${txtrst}"
+		echo -e "Supported Devices: p5110, skyrocket, captivatemtd, quincyatt, galaxysmtd, d2att, d2tmo, infuse4g, maguro, toro${txtrst}"
 		exit 2
 		;;
 esac
